@@ -1,0 +1,68 @@
+/* Generales */
+html * {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+h1
+{
+    font-style: oblique;
+    color: green;
+}
+/* Principal */
+main {
+  display: grid;
+
+  font-family: sans-serif;
+  height: 100vh;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr 2fr;
+  align-self: start | end | center | stretch;
+
+
+}
+h1{
+  grid-row: 2;
+}
+.principal > * {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.cabecera {
+  background-color:#f2dd4b;
+  grid-column: 1 / -1;
+}
+.infoizquierda {
+  background-color: rgb(149, 184, 240);
+  grid-row: 2 / 5;
+  grid-column: 1 ;
+}
+.inicio{
+
+  background-color: rgb(58, 187, 164);
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+.sub1{
+  background-color: rgba(222, 8, 8, 0.34);
+}
+.sub2{
+background-color: rgba(222, 8, 8, 0.34);
+}
+.pie {
+  background-color:#f2dd4b;
+  grid-column: 2/4;
+}

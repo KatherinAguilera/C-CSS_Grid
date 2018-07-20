@@ -1,0 +1,31 @@
+section {
+    display: grid;
+    grid-gap: 10px;
+    font-family:sans-serif;
+    margin: 20px 0;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.auto-fill div {
+    background-color: goldenrod;
+}
+
+.auto-fit div {
+    background-color: purple;
+    color: white;
+}
+/*autofill rellenar de manera dinamica track sin ser declarados en el HTML*/
+.auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+/*autofit asi hayan solo tres track (div), los ubica en tamaños iguales de acuerdo al viewport*/
+.auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

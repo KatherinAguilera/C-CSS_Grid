@@ -1,0 +1,26 @@
+main {
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+    /*Columnas explicitas*/
+    grid-template-columns: 200px 100px;
+    /*Columnas Implicitas*/
+    grid-auto-columns: 300px;
+    /*genera columnas, con row filas la cuale es por defecto*/
+    grid-auto-flow: column;
+}
+
+div {
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+div:first-child,
+div:nth-child(2),
+div:nth-child(5)  {
+	background-color: purple;
+	color: white;
+}
